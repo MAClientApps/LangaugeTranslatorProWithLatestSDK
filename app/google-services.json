@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1056873369225",
+    "project_id": "language-translator-pro-da950",
+    "storage_bucket": "language-translator-pro-da950.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056873369225:android:d126854f52055042458058",
+        "android_client_info": {
+          "package_name": "com.transapp.languagetranslatorpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056873369225-b57vqoifm78n3ms73nepciahooqdkulv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_MjDm7CEaY9Tp05RHv6C_WZHUVNG5w4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056873369225-b57vqoifm78n3ms73nepciahooqdkulv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

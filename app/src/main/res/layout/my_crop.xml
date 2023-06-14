@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blank"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layTop"
+        android:layout_width="match_parent"
+        android:layout_height="197px"
+        android:background="@drawable/topbar"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="#010f8a"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/backImg"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Crop"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSizeFont26" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layBottom"
+        android:layout_below="@+id/layTop"
+        android:layout_marginTop="@dimen/tx10dp"
+        android:layout_marginBottom="@dimen/tx10dp">
+
+        <com.theartofdev.edmodo.cropper.CropImageView
+            android:id="@+id/setCropImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layBottom"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/tx10dp"
+        android:layout_marginBottom="@dimen/tx20dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/rotateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/x_rotate" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cropBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/x_crop" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>
