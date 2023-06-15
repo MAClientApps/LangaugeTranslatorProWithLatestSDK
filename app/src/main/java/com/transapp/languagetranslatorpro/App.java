@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.adjust.sdk.Adjust;
 import com.mob.adjplugin.AdjConfig;
 import com.mob.coresdk.Mob;
 import com.mob.coresdk.MobConfig;
@@ -36,12 +37,12 @@ public class App extends Application {
     private static final class MobLifecycleCallbacks implements ActivityLifecycleCallbacks {
         @Override
         public void onActivityResumed(Activity activity) {
-            Mob.onResume(activity);
+            adj_config.onResume();
         }
 
         @Override
         public void onActivityPaused(Activity activity) {
-            //Mob.onPause();
+            adj_config.onPause();
         }
 
         @Override
