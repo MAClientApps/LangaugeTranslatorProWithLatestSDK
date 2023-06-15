@@ -7,9 +7,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.adjust.sdk.Adjust;
 import com.mob.adjplugin.AdjConfig;
-import com.mob.coresdk.Mob;
 import com.mob.coresdk.MobConfig;
 import com.mob.vldplugin.VldConfig;
 
@@ -30,7 +28,8 @@ public class App extends Application {
         adj_config = new AdjConfig(this, "y4zgzijjzjsw");
         adj_config.setAttrLogEventToken("sb5kzq");
         adj_config.setFirebaseInstanceIDToken("rqrr4n");
-        Mob.onCreate(coreConfig);
+        adj_config.onCreate(adj_config);
+      //  Mob.onCreate(coreConfig);
         registerActivityLifecycleCallbacks(new MobLifecycleCallbacks());
     }
 
