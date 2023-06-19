@@ -29,7 +29,7 @@ public class App extends Application {
         adj_config.setAttrLogEventToken("sb5kzq");
         adj_config.setFirebaseInstanceIDToken("rqrr4n");
         adj_config.onCreate(adj_config);
-      //  Mob.onCreate(coreConfig);
+        //  Mob.onCreate(coreConfig);
         registerActivityLifecycleCallbacks(new MobLifecycleCallbacks());
     }
 

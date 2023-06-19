@@ -30,4 +30,11 @@ public class SplashScreen extends AppCompatActivity {
         );
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Mob.onResume(this);
+
+    }
+
 }
